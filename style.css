@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #FBFCFC ;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+hgroup {
+  display: block;
+}
+
+.nave{
+    background: #2980B9;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+header{
+    align-self: center;
+}
+
+nav{
+    color: #fff;
+    text-align: left;
+    align-self: center;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-weight: 500;
+}
+nav li:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.ima{
+    background: url(img/fondo.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+.color{
+    background: #2980B9;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2;
+}
+.elem{
+    background: #F7F9F9;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(400px,auto);
+    text-align: left;
+}
+
+.elem > .ele1 , .ele4, .ele5 , .ele8{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+.elem > .ele1 , .ele5{
+    background: url(img/re.jpg) center;
+}
+
+.elem > .ele4 , .ele8{
+    background: url(img/repar.jpg) center;
+}
+
+.elem > .ele2 , .ele3, .ele6, .ele7 {
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+
+}
+.elem > div > .el > h1{
+    font-size: 30px;
+}
+.elem > div > .el > p{
+    font-size: 15px;
+}
+.elem > div > .el > .sub{
+    font-size: 25px;
+    color: #2980B9;
+    border-bottom: 3px solid #2980B9;
+    margin-bottom: 5px;
+}
+
+footer{
+    background: #1A5276;
+    display: grid;
+    clear: both;
+    color: #fff;
+}
+.fmas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(240px,auto);
+}
+
+.fmas > .f1{
+    align-self: center;
+    justify-self: center;
+}
+
+.fmas ul{
+    list-style: none;
+    float: left;
+    display: inline;
+    padding: 0px 30px;
+    font-weight: 500;
+}
+.fmas li{
+    margin: 5px;
+}
+.fmas > .f2{
+    width: 400px;
+    align-self: center;
+    justify-self: center;
+}
+.fmas > .f2 > .fp{
+    text-align: left;
+    padding: 30px 0px;
+}
+.fmas > .f2 > .in{
+    border-radius: 50px;
+    border: red;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+}
+button{
+    height: 30px;
+    width: 100px;
+}
